@@ -47,7 +47,7 @@
 ;; trigger completion at interesting places, such as after scope operator
 ;; std::|
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
-;;(global-set-key "\t" 'company-complete-common)
+
 (define-key company-mode-map (kbd "C-,") 'company-clang)
 (define-key company-mode-map (kbd "C-<") 'company-c-headers)
 (define-key company-mode-map (kbd "C-.") 'company-complete-common)
