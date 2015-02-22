@@ -1,3 +1,9 @@
+(custom-set-variables
+ '(company-c-headers-path-system
+   (quote
+    ("/usr/include/" "/usr/local/include/" "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include" "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include" "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"))))
+
+
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 (defun my:flymake-google-init ()
