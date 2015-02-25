@@ -1,4 +1,6 @@
+(require 'eclim)
 (require 'eclimd)
+(require 'eclim-maven)
 
 (custom-set-variables
   '(eclim-eclipse-dirs '("~/apps/eclipse-javaee-luna"))
@@ -8,8 +10,7 @@
 
 (require 'company)
 (require 'company-emacs-eclim)
-  (company-emacs-eclim-setup)
+(company-emacs-eclim-setup)
 
 (add-hook 'java-mode-hook 'eclim-mode)
 (add-hook 'java-mode-hook 'company-mode)
-
