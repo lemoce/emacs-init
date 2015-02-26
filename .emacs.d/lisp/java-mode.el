@@ -12,6 +12,7 @@
   (setq eclim-eclipse-dirs '("~/apps/eclipse-javaee-luna")
 	eclim-executable "~/apps/eclipse-javaee-luna/eclim"
 	eclimd-executable "~/apps/eclipse-javaee-luna/eclimd"
-	eclimd-default-workspace "~/eclim-workspace"))
-
+	eclimd-default-workspace "~/eclim-workspace")
+  (local-set-key (kbd "s-i") 'my:indent-buffer))
+  
 (add-hook 'java-mode-hook 'my:custom-varibles-java-mode)
