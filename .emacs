@@ -36,3 +36,4 @@
 
 
 (load "~/.emacs.d/lisp/c-mode.el")
+(load "~/.emacs.d/lisp/auto-complete-mode.el")
