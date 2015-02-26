@@ -27,13 +27,17 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-(global-set-key (kbd "C-c ;") 'iedit-mode)
+(global-set-key (kbd "\C-c ;") 'iedit-mode)
 (defun my:indent-buffer ()
   (interactive)
   (save-excursion
     (indent-region (point-min) (point-max) nil)))
 (global-set-key (kbd "s-i") 'my:indent-buffer)
 
+(require 'git)
 
-(load "~/.emacs.d/lisp/c-mode.el")
 (load "~/.emacs.d/lisp/auto-complete-mode.el")
+(load "~/.emacs.d/lisp/c-mode.el")
+(load "~/.emacs.d/lisp/python-mode.el")
+(load "~/.emacs.d/lisp/java-mode.el")
+(load "~/.emacs.d/lisp/R-mode.el")
