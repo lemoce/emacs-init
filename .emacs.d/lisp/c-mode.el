@@ -14,6 +14,6 @@
 
 (setq flycheck-clang-include-path (list "/usr/local/include/irrlicht"))
 
-(add-hook 'c-mode-hook 'flycheck-mode)
+(add-hook 'c-mode-hook 'my:c-init-hook)
 (add-hook 'c++-mode-hook 'my:c++-init-hook)
 
